@@ -1,3 +1,22 @@
+/*
+  usbiss.cpp - USB-ISS C++ interface
+  Copyright (c) 2014 Dimitrios Kouzis-Loukas.  All right reserved.
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
 #include <stdio.h>   /* Standard input/output definitions */
 #include <string.h>  /* String function definitions */
 #include <unistd.h>  /* UNIX standard function definitions */
@@ -15,6 +34,11 @@ namespace usbiss {
 
 // See also...
 // http://galindezrobotics.blogspot.co.uk/2012/01/installing-usb-iss-driver-on-linux-and.html
+// http://www.robot-electronics.co.uk/htm/usb_iss_tech.htm
+// http://www.acroname.com/products/R348-USB-ISS.html
+// http://www.tldp.org/HOWTO/Serial-Programming-HOWTO/x115.html
+// http://en.wikibooks.org/wiki/Serial_Programming/Serial_Linux
+
 
 // Anonymous namespace with local functions
 namespace {
