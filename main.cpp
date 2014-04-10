@@ -37,8 +37,15 @@ void tryIo(UsbIss & s) {
 }
 
 int main (int argc, char * const argv[]) {
+    const char * ttyPath = "/dev/tty.usbmodem00010851";
+    if (argc > 2) {
+        cerr << "Unexpected number of parameters" << endl;
+    }
+    else if (argc == 2) {
+      ttyPath = argv[1];
+    }
     try {
-        UsbIss s("/dev/tty.usbmodem00010851");
+        UsbIss s(ttyPath);
     
         cout << "Serial: " << s.getSerialNumber() << std::endl;
     
