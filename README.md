@@ -10,6 +10,7 @@ The way to use is very simple, just...
     make
 
 Then you can run the program with:
-    ./usbiss
+
+    ./usbiss <path to your terminal tty device (/dev/tty...)>
 
 The program right now reads some analog values from the pins configured as Analog Inputs. The infrastructure can easily support/implements tons of further improvements.
