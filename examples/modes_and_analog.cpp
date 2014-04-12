@@ -20,7 +20,7 @@
 #include <iostream>
 #include <unistd.h>  /* UNIX standard function definitions */
 
-#include "usbiss.h"
+#include "../usbiss.h"
 
 using namespace std;
 using namespace usbiss;
