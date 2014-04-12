@@ -9,7 +9,7 @@ The way to use is very simple, just...
 
     make
 
-Then you can run the program with:
+Then you can run the examples with:
 
 	build/leds <path to your terminal tty device (/dev/tty...)>
     build/modes_and_analog <path to your terminal tty device (/dev/tty...)>
@@ -18,5 +18,6 @@ The program right now reads some analog values from the pins configured as Analo
 
 Todo:
 
-- Put a timeout on the reads/writes (they occasionally fail)
-
+- [ ] Put a timeout on the reads/writes (they occasionally fail)
+- [ ] Crete the I2C interface for the MPU6050 gyroscope
+- [ ] Document the server / leds example
